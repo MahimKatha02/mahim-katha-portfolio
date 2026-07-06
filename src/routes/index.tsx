@@ -331,11 +331,11 @@ function Contact() {
       <div className="grid lg:grid-cols-2 gap-8">
         <Card>
           <div className="space-y-5">
-            <ContactRow icon={<Mail size={18} />} label="Email" value="mahim.chowdhury.katha@gmail.com" href={SOCIALS.email} />
+            <ContactRow icon={<Mail size={18} />} label="Email" value="sinthiyakotha870@gmail.com" href={SOCIALS.email} />
             <ContactRow icon={<Phone size={18} />} label="Phone" value={SOCIALS.phone} href={`tel:${SOCIALS.phone}`} />
             <ContactRow icon={<MapPin size={18} />} label="Location" value={SOCIALS.location} />
-            <ContactRow icon={<Linkedin size={18} />} label="LinkedIn" value="mahim-chowdhury-katha" href={SOCIALS.linkedin} />
-            <ContactRow icon={<Github size={18} />} label="GitHub" value="mahim-chowdhury-katha" href={SOCIALS.github} />
+            <ContactRow icon={<Linkedin size={18} />} label="LinkedIn" value="mahim-chowdhury-katha02" href={SOCIALS.linkedin} />
+            <ContactRow icon={<Github size={18} />} label="GitHub" value="MahimKatha02" href={SOCIALS.github} />
           </div>
           <div className="mt-8 flex gap-3">
             <AnchorButton href={SOCIALS.email}>
