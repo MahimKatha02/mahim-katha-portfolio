@@ -35,7 +35,7 @@ export function OrderForm() {
       .map(([k, v]) => `${k}: ${v}`)
       .join("\n")}`;
     // Fallback: open mail client
-    window.location.href = `mailto:mahim.chowdhury.katha@gmail.com?subject=${encodeURIComponent(
+    window.location.href = `mailto:sinthiyakotha870@gmail.com?subject=${encodeURIComponent(
       "New Project Inquiry — " + values.name,
     )}&body=${encodeURIComponent(body)}`;
     setSubmitted(true);

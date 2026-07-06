@@ -11,11 +11,11 @@ export const NAV_LINKS = [
 ];
 
 export const SOCIALS = {
-  linkedin: "https://linkedin.com/in/mahim-chowdhury-katha",
-  github: "https://github.com/mahim-chowdhury-katha",
-  email: "mailto:mahim.chowdhury.katha@gmail.com",
-  phone: "+8801XXXXXXXXX",
-  location: "Dhaka, Bangladesh",
+  linkedin: "https://linkedin.com/in/mahim-chowdhury-katha02",
+  github: "https://github.com/MahimKatha02",
+  email: "mailto:sinthiyakotha870@gmail.com",
+  phone: "+880 1309 295455",
+  location: "Aftabnagar, Dhaka, Bangladesh",
 };
 
 export const SKILL_GROUPS = [
@@ -192,7 +192,7 @@ export const TIMELINE = [
     body: "Leading business operations, client communication, supplier negotiation, marketing, budgeting and project delivery.",
   },
   {
-    year: "2020 — 2024",
+    year: "2020 — 2026",
     title: "BSc in Computer Science & Engineering",
     body: "East West University — Major in Data Science. Coursework in ML, Deep Learning, Computer Vision, Databases, Networks, Algorithms, Probability and Statistics.",
   },
