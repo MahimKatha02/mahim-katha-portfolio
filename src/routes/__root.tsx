@@ -81,9 +81,13 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { name: "description", content: "Machine Learning Engineer, AI Developer, Data Science Graduate, Web Developer, Power BI Analyst, Networking Enthusiast based in Bangladesh." },
       { name: "author", content: "Mahim Chowdhury Katha" },
       { property: "og:title", content: "Mahim Chowdhury Katha | AI, Machine Learning & Web Developer" },
-      { property: "og:description", content: "Intelligent software, modern web applications, and data-driven systems." },
+      { property: "og:description", content: "Machine Learning Engineer, AI Developer, Data Science Graduate, Web Developer, Power BI Analyst, Networking Enthusiast based in Bangladesh." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
+      { name: "twitter:title", content: "Mahim Chowdhury Katha | AI, Machine Learning & Web Developer" },
+      { name: "twitter:description", content: "Machine Learning Engineer, AI Developer, Data Science Graduate, Web Developer, Power BI Analyst, Networking Enthusiast based in Bangladesh." },
+      { property: "og:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/06906d42-9dae-4ea8-8e1b-a0b0f39e90f1/id-preview-9476aaec--8a2a084d-c475-4c90-874d-3402ba26d6ae.lovable.app-1783367153089.png" },
+      { name: "twitter:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/06906d42-9dae-4ea8-8e1b-a0b0f39e90f1/id-preview-9476aaec--8a2a084d-c475-4c90-874d-3402ba26d6ae.lovable.app-1783367153089.png" },
     ],
     links: [
       {
