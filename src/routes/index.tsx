@@ -412,5 +412,3 @@ function Footer() {
 
 // Suppress unused Button import warning; used indirectly via named export re-use
 export { Button };
-  );
-}
