@@ -84,11 +84,16 @@ function Hero() {
               View Projects <ArrowRight size={16} />
             </AnchorButton>
             <AnchorButton href="#order" variant="outline">
-              Hire Me
-            </AnchorButton>
-            <AnchorButton href="/cv.pdf" download variant="ghost">
-              <Download size={16} /> Download CV
-            </AnchorButton>
+              Hire Me   </AnchorButton>
+              
+            <AnchorButton
+  href="/Mahim_Chowdhury_Katha_CV_updated.pdf"
+  download
+  variant="ghost"
+>
+  <Download size={16} />
+  Download CV
+</AnchorButton>
           </div>
           <div className="mt-12 flex items-center gap-5 text-[var(--burgundy)]">
             <a href={SOCIALS.linkedin} target="_blank" rel="noreferrer" aria-label="LinkedIn" className="hover:text-[var(--umber)] transition">
