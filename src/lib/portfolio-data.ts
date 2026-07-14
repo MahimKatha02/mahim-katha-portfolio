@@ -72,53 +72,117 @@ export const SKILL_GROUPS = [
   },
 ];
 
+// export const PROJECTS = [
+//   {
+//     title: "Tomato Leaf Disease Classification",
+//     description:
+//       "CNN-based image classification with Grad-CAM explainability for accurate diagnosis of tomato leaf diseases.",
+//     tech: ["Python", "PyTorch", "CNN", "Grad-CAM"],
+//     features: ["Image classification", "Explainable AI", "Performance evaluation"],
+//     github: "#",
+//     details: "#",
+//   },
+//   {
+//     title: "Wall Crack Detection",
+//     description:
+//       "Computer vision pipeline for detecting structural cracks in walls to support automated inspections.",
+//     tech: ["Python", "CNN", "Image Processing"],
+//     features: ["Computer Vision", "Structural inspection", "Research"],
+//     github: "#",
+//     details: "#",
+//   },
+//   {
+//     title: "Rice Variety Classification",
+//     description:
+//       "Machine learning classifier that distinguishes rice varieties using engineered visual features.",
+//     tech: ["Python", "Scikit-learn", "Machine Learning"],
+//     features: ["Classification", "Feature Engineering", "Evaluation"],
+//     github: "#",
+//     details: "#",
+//   },
+//   {
+//     title: "Smart Vehicle Parking Finder",
+//     description:
+//       "Responsive web application for locating parking with dynamic pricing and slot management.",
+//     tech: ["HTML", "CSS", "JavaScript"],
+//     features: ["Dynamic pricing", "Parking management", "Responsive UI"],
+//     github: "#",
+//     details: "#",
+//   },
+//   {
+//     title: "Enterprise Network Simulation",
+//     description:
+//       "Multi-branch enterprise network built in Cisco Packet Tracer covering routing, switching, and security.",
+//     tech: ["Cisco Packet Tracer"],
+//     features: ["LAN", "WAN", "Routing", "Switching", "VLAN", "ACL", "OSPF", "RIP"],
+//     github: "#",
+//     details: "#",
+//   },
+// ];
+
+
+
+// src/lib/portfolio-data.ts
+
 export const PROJECTS = [
   {
     title: "Tomato Leaf Disease Classification",
-    description:
-      "CNN-based image classification with Grad-CAM explainability for accurate diagnosis of tomato leaf diseases.",
-    tech: ["Python", "PyTorch", "CNN", "Grad-CAM"],
-    features: ["Image classification", "Explainable AI", "Performance evaluation"],
-    github: "#",
-    details: "#",
+    description: "Trained a CNN to classify tomato plant diseases from leaf images using PyTorch. Applied Grad-CAM for model interpretability and evaluated with accuracy, precision, recall, and F1.",
+    image: "/tomato_leaf.png",
+    tech: ["PyTorch", "CNN", "Grad-CAM", "Python"],
+    features: [
+      "Applied Grad-CAM for model interpretability",
+      "Evaluated with accuracy, precision, recall, and F1",
+      "Achieved high classification accuracy"
+    ],
+    github: "https://github.com/MahimKatha02/tomato-leaf-disease",
+    details: "https://github.com/MahimKatha02/tomato-leaf-disease",
   },
   {
     title: "Wall Crack Detection",
-    description:
-      "Computer vision pipeline for detecting structural cracks in walls to support automated inspections.",
+    description: "Researched automated structural defect detection; implemented a CNN-based feature extraction pipeline with a documented research report.",
+    image: "/wall-crack.jpg",
     tech: ["Python", "CNN", "Image Processing"],
-    features: ["Computer Vision", "Structural inspection", "Research"],
-    github: "#",
-    details: "#",
+    features: [
+      "Implemented CNN-based feature extraction pipeline",
+      "Documented research report with methodology",
+      "Applied image processing techniques"
+    ],
+    github: "https://github.com/MahimKatha02/wall-crack-detection",
+    details: "https://github.com/MahimKatha02/wall-crack-detection",
   },
   {
-    title: "Rice Variety Classification",
-    description:
-      "Machine learning classifier that distinguishes rice varieties using engineered visual features.",
+    title: "Rice Varieties Classification",
+    description: "Built a multi-class ML classifier with a full preprocessing pipeline, evaluated using confusion matrix metrics.",
+    image: "/rice_variety.png",
     tech: ["Python", "Scikit-learn", "Machine Learning"],
-    features: ["Classification", "Feature Engineering", "Evaluation"],
-    github: "#",
-    details: "#",
+    features: [
+      "Full preprocessing pipeline implementation",
+      "Evaluated using confusion matrix metrics",
+      "Multi-class classification approach"
+    ],
+    github: "https://github.com/MahimKatha02/rice-varieties-classification",
+    details: "https://github.com/MahimKatha02/rice-varieties-classification",
   },
   {
     title: "Smart Vehicle Parking Finder",
-    description:
-      "Responsive web application for locating parking with dynamic pricing and slot management.",
+    description: "Developed a real-time parking solution with occupancy-based dynamic pricing and a responsive frontend interface.",
+    image: "/simulation.png",
     tech: ["HTML", "CSS", "JavaScript"],
-    features: ["Dynamic pricing", "Parking management", "Responsive UI"],
-    github: "#",
-    details: "#",
-  },
-  {
-    title: "Enterprise Network Simulation",
-    description:
-      "Multi-branch enterprise network built in Cisco Packet Tracer covering routing, switching, and security.",
-    tech: ["Cisco Packet Tracer"],
-    features: ["LAN", "WAN", "Routing", "Switching", "VLAN", "ACL", "OSPF", "RIP"],
-    github: "#",
-    details: "#",
+    features: [
+      "Occupancy-based dynamic pricing",
+      "Responsive frontend interface",
+      "Real-time parking availability"
+    ],
+    github: "https://github.com/MahimKatha02/smart-parking",
+    details: "https://github.com/MahimKatha02/smart-parking",
   },
 ];
+
+
+
+
+
 
 export const SERVICES = [
   {
@@ -189,6 +253,11 @@ export const TIMELINE = [
   {
     year: "2023 — Present",
     title: "Founder & Owner — Purple Daze",
+    body: "Leading business operations, client communication, supplier negotiation, marketing, budgeting and project delivery.",
+  },
+   {
+    year: "2023 — Present",
+    title: "Founder & Owner — Arctic Daze",
     body: "Leading business operations, client communication, supplier negotiation, marketing, budgeting and project delivery.",
   },
   {
