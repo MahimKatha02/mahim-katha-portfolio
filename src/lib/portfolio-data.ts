@@ -167,7 +167,7 @@ export const PROJECTS = [
   {
     title: "Smart Vehicle Parking Finder",
     description: "Developed a real-time parking solution with occupancy-based dynamic pricing and a responsive frontend interface.",
-    image: "/simulation.png",
+    image: "/car-parking.jpg",
     tech: ["HTML", "CSS", "JavaScript"],
     features: [
       "Occupancy-based dynamic pricing",
@@ -177,6 +177,21 @@ export const PROJECTS = [
     github: "https://github.com/MahimKatha02/smart-parking",
     details: "https://github.com/MahimKatha02/smart-parking",
   },
+  {
+  title: "Network Simulation Projects",
+  description: "Designed and simulated enterprise-grade network topologies including LAN/WAN configurations, routing protocols, and network security implementations using Cisco Packet Tracer.",
+  image: "/simulation.png",
+  tech: ["Cisco Packet Tracer", "VLAN", "RIP", "OSPF", "ACL"],
+  features: [
+    "Enterprise LAN/WAN topology design and simulation",
+    "VLAN configuration for network segmentation",
+    "RIP and OSPF routing protocol implementation",
+    "Access Control Lists (ACL) for network security",
+    "Network troubleshooting and performance analysis"
+  ],
+  github: "https://github.com/MahimKatha02/network-simulation",
+  details: "https://github.com/MahimKatha02/network-simulation",
+},
 ];
 
 
