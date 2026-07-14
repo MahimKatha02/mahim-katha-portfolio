@@ -127,7 +127,7 @@ function Hero() {
             </h1>
             
             <p className="mt-6 text-base md:text-lg text-[var(--umber)] tracking-wide">
-              Machine Learning · Artificial Intelligence · Data Science · Web Development · Networking
+              Machine Learning · Artificial Intelligence · Data Science · Web Development · Networking · Entrepreneur
             </p>
             
             <p className="mt-8 text-lg md:text-xl text-[var(--eerie)]/75 leading-relaxed max-w-3xl">
@@ -193,7 +193,9 @@ function Hero() {
                 />
                 
                 {/* Main Image Container */}
-                <div className="relative w-40 h-40 md:w-48 md:h-48 rounded-full overflow-hidden border-4 border-[var(--pearl)] shadow-2xl">
+                {/* <div className="relative w-40 h-40 md:w-48 md:h-48 rounded-full overflow-hidden border-4 border-[var(--pearl)] shadow-2xl"> */}
+                <div className="relative w-56 h-56 md:w-52 md:h-52 lg:w-62 lg:h-62 rounded-full overflow-hidden border-4 border-[#F5F0EB] shadow-2xl">
+
                   {!image1Loaded && !image1Error && (
                     <motion.div 
                       className="absolute inset-0 bg-gradient-to-r from-[var(--pearl)] via-[var(--platinum)] to-[var(--pearl)]"
@@ -283,7 +285,7 @@ function Hero() {
                 />
 
                 {/* Second Image Container */}
-                <div className="relative w-40 h-40 md:w-48 md:h-48 rounded-2xl overflow-hidden border-2 border-[var(--pearl)] shadow-xl">
+                <div className="relative w-52 h-52 md:w-62 md:h-62 rounded-2xl overflow-hidden border-2 border-[var(--pearl)] shadow-xl">
                   {!image2Loaded && !image2Error && (
                     <motion.div 
                       className="absolute inset-0 bg-gradient-to-r from-[var(--pearl)] via-[var(--platinum)] to-[var(--pearl)]"
@@ -337,10 +339,10 @@ function Hero() {
               transition={{ delay: 0.6 }}
             >
               <span className="text-[10px] text-[var(--umber)] tracking-wider">
-                Profile
+                
               </span>
               <span className="text-[10px] text-[var(--umber)] tracking-wider">
-                Work
+                
               </span>
             </motion.div>
           </motion.div>
@@ -477,7 +479,12 @@ function Hero() {
 
 function About() {
   return (
-    <Section id="about" eyebrow="About" title="A calm, methodical builder of intelligent systems." subtitle="BSc in Computer Science & Engineering (Data Science) graduate from East West University with hands-on experience in machine learning, deep learning, and computer vision. Completed five AI/ML research projects and three certifications.">
+    <Section id="about" eyebrow="About" title="A calm, methodical builder of intelligent systems.
+    
+    " subtitle=""> 
+
+    {/* BSc in Computer Science & Engineering (Data Science) graduate from East West University with hands-on experience in machine learning, deep learning, and computer vision. Completed five AI/ML research projects and three certifications. */}
+
       <div className="grid lg:grid-cols-5 gap-10">
         <div className="lg:col-span-3 space-y-5 text-[var(--eerie)]/80 leading-relaxed">
           <p>

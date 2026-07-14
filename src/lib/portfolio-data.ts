@@ -148,8 +148,8 @@ export const PROJECTS = [
       "Documented research report with methodology",
       "Applied image processing techniques"
     ],
-    github: "https://github.com/MahimKatha02/wall-crack-detection",
-    details: "https://github.com/MahimKatha02/wall-crack-detection",
+    github: "https://github.com/MahimKatha02/wallCrackWith2datasets",
+    details: "https://github.com/MahimKatha02/wallCrackWith2datasets",
   },
   {
     title: "Rice Varieties Classification",
@@ -161,8 +161,8 @@ export const PROJECTS = [
       "Evaluated using confusion matrix metrics",
       "Multi-class classification approach"
     ],
-    github: "https://github.com/MahimKatha02/rice-varieties-classification",
-    details: "https://github.com/MahimKatha02/rice-varieties-classification",
+    github: "https://github.com/MahimKatha02/RiceVarietiesBangladesh_Classification_CSE475_Project",
+    details: "https://github.com/MahimKatha02/RiceVarietiesBangladesh_Classification_CSE475_Project",
   },
   {
     title: "Smart Vehicle Parking Finder",
