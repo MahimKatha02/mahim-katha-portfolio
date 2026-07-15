@@ -22,6 +22,19 @@ Modern portfolio website showcasing my work in Machine Learning, Artificial Inte
 
 </div>
 
+
+---
+
+## 📸 Portfolio Preview
+
+<div align="center">
+  <a href="https://mahim-katha-portfolio-1.vercel.app">
+    <img src="https://raw.githubusercontent.com/MahimKatha02/mahim-katha-portfolio/main/public/portfolio.png" alt="Mahim Chowdhury Katha Portfolio" width="800" />
+  </a>
+  <br>
+  <em>Click the image to visit the live portfolio</em>
+</div>
+
 ---
 
 ## 📑 Table of Contents
@@ -176,17 +189,6 @@ The portfolio is optimized for all major screen sizes.
 | Tablet | ✅ |
 | Mobile | ✅ |
 
----
-
-## 📸 Portfolio Preview
-
-<div align="center">
-  <a href="https://mahim-katha-portfolio-1.vercel.app">
-    <img src="https://raw.githubusercontent.com/MahimKatha02/mahim-katha-portfolio/main/public/portfolio.png" alt="Mahim Chowdhury Katha Portfolio" width="800" />
-  </a>
-  <br>
-  <em>Click the image to visit the live portfolio</em>
-</div>
 
 
 ---
