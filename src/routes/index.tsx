@@ -65,6 +65,8 @@ function Index() {
   );
 }
 
+
+
 function Hero() {
   const [image1Loaded, setImage1Loaded] = useState(false);
   const [image2Loaded, setImage2Loaded] = useState(false);
@@ -101,57 +103,61 @@ function Hero() {
   }, []);
 
   return (
-    <section id="home" className="pt-40 pb-24 md:pt-52 md:pb-32 relative overflow-hidden">
+    <section id="home" className="pt-16 md:pt-20 pb-16 md:pb-24 lg:pb-32 relative overflow-hidden">
       {/* Animated background */}
       <div className="absolute inset-0 -z-10">
         <div className="absolute top-[-40%] right-[-20%] w-[500px] h-[500px] rounded-full bg-[var(--burgundy)]/5 blur-3xl animate-pulse" />
         <div className="absolute bottom-[-30%] left-[-10%] w-[400px] h-[400px] rounded-full bg-[var(--umber)]/5 blur-3xl animate-pulse delay-1000" />
       </div>
       
-      <div className="max-w-[1200px] mx-auto px-6">
-        <div className="grid lg:grid-cols-5 gap-12 items-center">
+      <div className="max-w-[1200px] mx-auto px-4 sm:px-6">
+        <div className="grid lg:grid-cols-5 gap-6 md:gap-12 items-center">
           {/* Text Content - Left Side */}
           <motion.div 
             initial="hidden" 
             animate="visible" 
             variants={fadeUp} 
-            className="lg:col-span-3"
+            className="lg:col-span-3 text-center lg:text-left"
           >
-            <div className="text-xs uppercase tracking-[0.3em] text-[var(--umber)] mb-6 flex items-center gap-3">
-              <span className="w-8 h-px bg-[var(--umber)]" />
+            <div className="text-[10px] sm:text-xs uppercase tracking-[0.2em] sm:tracking-[0.3em] text-[var(--umber)] mb-4 sm:mb-6 flex items-center justify-center lg:justify-start gap-2 sm:gap-3">
+              <span className="w-6 sm:w-8 h-px bg-[var(--umber)]" />
               Machine Learning Engineer · Bangladesh
             </div>
             
-            <h1 className="font-display text-5xl md:text-7xl leading-[1.05] text-[var(--burgundy)]">
-              Mahim Chowdhury Katha
+            <h1 className="font-display text-3xl sm:text-4xl md:text-5xl lg:text-7xl leading-[1.1] sm:leading-[1.05] text-[var(--burgundy)]">
+              Mahim Chowdhury
+              <br className="block sm:hidden" />
+              <span className="hidden sm:inline"> </span>
+              Katha
             </h1>
             
-            <p className="mt-6 text-base md:text-lg text-[var(--umber)] tracking-wide">
+            <p className="mt-3 sm:mt-4 md:mt-6 text-sm sm:text-base md:text-lg text-[var(--umber)] tracking-wide max-w-2xl mx-auto lg:mx-0">
               Machine Learning · Artificial Intelligence · Data Science · Web Development · Networking · Entrepreneur
             </p>
             
-            <p className="mt-8 text-lg md:text-xl text-[var(--eerie)]/75 leading-relaxed max-w-3xl">
+            <p className="mt-4 sm:mt-6 md:mt-8 text-sm sm:text-base md:text-lg lg:text-xl text-[var(--eerie)]/75 leading-relaxed max-w-3xl mx-auto lg:mx-0">
               BSc in Computer Science & Engineering (Data Science) graduate from East West University with hands-on experience in machine learning, deep learning, and computer vision. Completed five AI/ML research projects and three certifications.
             </p>
             
-            <div className="mt-10 flex flex-wrap gap-3">
-              <AnchorButton href="#projects">
-                View Projects <ArrowRight size={16} />
+            <div className="mt-6 sm:mt-8 md:mt-10 flex flex-wrap gap-2 sm:gap-3 justify-center lg:justify-start">
+              <AnchorButton href="#projects" className="text-sm sm:text-base px-4 sm:px-6 py-2 sm:py-3">
+                View Projects <ArrowRight size={16} className="inline-block" />
               </AnchorButton>
-              <AnchorButton href="#order" variant="outline">
+              <AnchorButton href="#order" variant="outline" className="text-sm sm:text-base px-4 sm:px-6 py-2 sm:py-3">
                 Hire Me
               </AnchorButton>
               <AnchorButton
                 href="/Mahim_Chowdhury_Katha_Updated_CV_.pdf"
                 download
                 variant="ghost"
+                className="text-sm sm:text-base px-4 sm:px-6 py-2 sm:py-3"
               >
-                <Download size={16} />
+                <Download size={16} className="inline-block mr-1" />
                 Download CV
               </AnchorButton>
             </div>
             
-            <div className="mt-12 flex items-center gap-5 text-[var(--burgundy)]">
+            <div className="mt-8 sm:mt-10 md:mt-12 flex items-center gap-4 sm:gap-5 text-[var(--burgundy)] justify-center lg:justify-start">
               <a href={SOCIALS.linkedin} target="_blank" rel="noreferrer" aria-label="LinkedIn" className="hover:text-[var(--umber)] transition">
                 <Linkedin size={20} />
               </a>
@@ -166,12 +172,12 @@ function Hero() {
 
           {/* Images - Right Side */}
           <motion.div 
-            className="lg:col-span-2 flex flex-col items-center gap-6"
+            className="lg:col-span-2 flex flex-col items-center gap-4 sm:gap-6 mt-6 sm:mt-8 lg:mt-0"
             initial={{ opacity: 0, scale: 0.8 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.8, delay: 0.2, ease: "easeOut" }}
           >
-            <div className="flex gap-4 items-center">
+            <div className="flex flex-col sm:flex-row gap-4 sm:gap-6 items-center">
               {/* First Image - Profile */}
               <motion.div 
                 className="relative flex-shrink-0"
@@ -192,10 +198,8 @@ function Hero() {
                   }}
                 />
                 
-                {/* Main Image Container */}
-                {/* <div className="relative w-40 h-40 md:w-48 md:h-48 rounded-full overflow-hidden border-4 border-[var(--pearl)] shadow-2xl"> */}
-                <div className="relative w-56 h-56 md:w-52 md:h-52 lg:w-62 lg:h-62 rounded-full overflow-hidden border-4 border-[#F5F0EB] shadow-2xl">
-
+                {/* Main Image Container - Mobile Responsive */}
+                <div className="relative w-40 h-40 sm:w-48 sm:h-48 md:w-56 md:h-56 lg:w-64 lg:h-64 rounded-full overflow-hidden border-4 border-[var(--pearl)] shadow-2xl">
                   {!image1Loaded && !image1Error && (
                     <motion.div 
                       className="absolute inset-0 bg-gradient-to-r from-[var(--pearl)] via-[var(--platinum)] to-[var(--pearl)]"
@@ -213,11 +217,11 @@ function Hero() {
                   {/* Fallback if image fails to load */}
                   {image1Error ? (
                     <div className="w-full h-full flex items-center justify-center bg-gradient-to-br from-[var(--burgundy)] to-[var(--umber)]">
-                      <span className="text-3xl font-display text-[var(--pearl)]">MCK</span>
+                      <span className="text-2xl sm:text-3xl font-display text-[var(--pearl)]">MCK</span>
                     </div>
                   ) : (
                     <img 
-                      src="/profile.jpg"  // ✅ Fixed: removed "./public/"
+                      src="/profile.jpg"
                       alt="Mahim Chowdhury Katha"
                       className="w-full h-full object-cover"
                       onLoad={() => setImage1Loaded(true)}
@@ -228,43 +232,43 @@ function Hero() {
                   <div className="absolute inset-0 bg-gradient-to-t from-[var(--burgundy)]/10 to-transparent" />
                 </div>
 
-                {/* Decorative rings */}
+                {/* Decorative rings - Hidden on mobile */}
                 <motion.div 
-                  className="absolute -inset-4 rounded-full border border-[var(--umber)]/10"
+                  className="absolute -inset-4 rounded-full border border-[var(--umber)]/10 hidden sm:block"
                   animate={{ rotate: 360 }}
                   transition={{ duration: 20, repeat: Infinity, ease: "linear" }}
                 />
                 <motion.div 
-                  className="absolute -inset-8 rounded-full border border-[var(--tuscany)]/5"
+                  className="absolute -inset-8 rounded-full border border-[var(--tuscany)]/5 hidden sm:block"
                   animate={{ rotate: -360 }}
                   transition={{ duration: 25, repeat: Infinity, ease: "linear" }}
                 />
 
-                {/* Floating badges */}
+                {/* Floating badges - Smaller on mobile */}
                 <motion.div 
-                  className="absolute -top-3 -right-3 bg-[var(--pearl)] rounded-full p-2 shadow-lg border border-[var(--border)]"
+                  className="absolute -top-2 -right-2 sm:-top-3 sm:-right-3 bg-[var(--pearl)] rounded-full p-1.5 sm:p-2 shadow-lg border border-[var(--border)]"
                   initial={{ opacity: 0, y: 20 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ delay: 0.5, duration: 0.5 }}
                   whileHover={{ scale: 1.1, rotate: 10 }}
                 >
-                  <span className="text-xs font-medium text-[var(--burgundy)]">AI</span>
+                  <span className="text-[10px] sm:text-xs font-medium text-[var(--burgundy)]">AI</span>
                 </motion.div>
                 
                 <motion.div 
-                  className="absolute -bottom-2 -left-3 bg-[var(--pearl)] rounded-full p-2 shadow-lg border border-[var(--border)]"
+                  className="absolute -bottom-2 -left-2 sm:-bottom-3 sm:-left-3 bg-[var(--pearl)] rounded-full p-1.5 sm:p-2 shadow-lg border border-[var(--border)]"
                   initial={{ opacity: 0, y: 20 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ delay: 0.7, duration: 0.5 }}
                   whileHover={{ scale: 1.1, rotate: -10 }}
                 >
-                  <span className="text-xs font-medium text-[var(--umber)]">ML</span>
+                  <span className="text-[10px] sm:text-xs font-medium text-[var(--umber)]">ML</span>
                 </motion.div>
               </motion.div>
 
-              {/* Second Image - profile2 */}
+              {/* Second Image - profile2 - Hidden on mobile */}
               <motion.div 
-                className="relative flex-shrink-0"
+                className="relative flex-shrink-0 hidden sm:block"
                 initial={{ opacity: 0, x: 30 }}
                 animate={{ opacity: 1, x: 0 }}
                 transition={{ duration: 0.6, delay: 0.4 }}
@@ -285,7 +289,7 @@ function Hero() {
                 />
 
                 {/* Second Image Container */}
-                <div className="relative w-52 h-52 md:w-62 md:h-62 rounded-2xl overflow-hidden border-2 border-[var(--pearl)] shadow-xl">
+                <div className="relative w-48 h-48 sm:w-52 sm:h-52 md:w-60 md:h-60 lg:w-64 lg:h-64 rounded-2xl overflow-hidden border-2 border-[var(--pearl)] shadow-xl">
                   {!image2Loaded && !image2Error && (
                     <motion.div 
                       className="absolute inset-0 bg-gradient-to-r from-[var(--pearl)] via-[var(--platinum)] to-[var(--pearl)]"
@@ -304,11 +308,11 @@ function Hero() {
                   {/* Fallback if image fails to load */}
                   {image2Error ? (
                     <div className="w-full h-full flex items-center justify-center bg-gradient-to-br from-[var(--umber)] to-[var(--tuscany)]">
-                      <span className="text-2xl font-display text-[var(--pearl)]">WORK</span>
+                      <span className="text-xl sm:text-2xl font-display text-[var(--pearl)]">WORK</span>
                     </div>
                   ) : (
                     <img 
-                      src="/profile2.jpg"  // ✅ Fixed: removed "./public/"
+                      src="/profile2.jpg"
                       alt="Mahim Chowdhury Katha - Work"
                       className="w-full h-full object-cover"
                       onLoad={() => setImage2Loaded(true)}
@@ -331,19 +335,15 @@ function Hero() {
               </motion.div>
             </div>
 
-            {/* Labels below images */}
+            {/* Labels below images - Hidden on mobile */}
             <motion.div 
-              className="flex gap-8 text-center"
+              className="hidden sm:flex gap-8 md:gap-12 text-center"
               initial={{ opacity: 0, y: 10 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.6 }}
             >
-              <span className="text-[10px] text-[var(--umber)] tracking-wider">
-                
-              </span>
-              <span className="text-[10px] text-[var(--umber)] tracking-wider">
-                
-              </span>
+              <span className="text-[10px] text-[var(--umber)] tracking-wider">Profile</span>
+              <span className="text-[10px] text-[var(--umber)] tracking-wider">Work</span>
             </motion.div>
           </motion.div>
         </div>
@@ -351,6 +351,10 @@ function Hero() {
     </section>
   );
 }
+
+
+
+
 
 // function About() {
 //   return (
