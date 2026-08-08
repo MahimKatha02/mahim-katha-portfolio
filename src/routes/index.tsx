@@ -147,7 +147,7 @@ function Hero() {
                 Hire Me
               </AnchorButton>
               <AnchorButton
-                href="/Mahim_Chowdhury_Katha_Updated_CV_.pdf"
+                href="/Mahim_Chowdhury_Katha_Updated_Resume.pdf"
                 download
                 variant="ghost"
                 className="text-sm sm:text-base px-4 sm:px-6 py-2 sm:py-3"
